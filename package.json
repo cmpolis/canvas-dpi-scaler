@@ -1,7 +1,7 @@
 {
   "name": "canvas-dpi-scaler",
-  "version": "0.0.2",
-  "description": "Utility to scale and <canvas> for Retina and other high resolution screens.",
+  "version": "0.0.3",
+  "description": "Utility to scale <canvas> for Retina and other high resolution screens.",
   "main": "canvas-dpi-scaler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
