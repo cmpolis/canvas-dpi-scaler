@@ -1,6 +1,6 @@
 {
   "name": "canvas-dpi-scaler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility to scale and <canvas> for Retina and other high resolution screens.",
   "main": "canvas-dpi-scaler.js",
   "scripts": {
