@@ -3,7 +3,9 @@
 // Based on: http://www.html5rocks.com/en/tutorials/canvas/hidpi/
 
 //
-module.exports = function(canvas, context, customWidth, customHeight) {
+var scaleFn = function(canvas, context, customWidth, customHeight) {
+  if(!canvas || !context) { throw new Error('Must pass in `canvas` and `context`.'); }
+
   var width = customWidth ||
               canvas.width || // attr, eg: <canvas width='400'>
               canvas.clientWidth; // keep existing width
@@ -28,3 +30,7 @@ module.exports = function(canvas, context, customWidth, customHeight) {
   }
   return ratio;
 };
+
+// expose functionality
+if(typeof window !== 'undefined') { window.canvasDpiScaler = scaleFn; }
+module.exports = scaleFn;
