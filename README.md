@@ -1,6 +1,6 @@
 # Canvas DPI Scaler
 
-Utility to scale and <canvas> for Retina and other high resolution screens.
+Utility to scale `<canvas>` for Retina and other high resolution screens.
 
 ### Usage: 
 
