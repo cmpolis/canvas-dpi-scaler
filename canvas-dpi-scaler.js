@@ -2,7 +2,8 @@
 //
 // Based on: http://www.html5rocks.com/en/tutorials/canvas/hidpi/
 
-//
+(function() {
+
 var scaleFn = function(canvas, context, customWidth, customHeight) {
   if(!canvas || !context) { throw new Error('Must pass in `canvas` and `context`.'); }
 
@@ -31,6 +32,6 @@ var scaleFn = function(canvas, context, customWidth, customHeight) {
   return ratio;
 };
 
-// expose functionality
-if(typeof window !== 'undefined') { window.canvasDpiScaler = scaleFn; }
-module.exports = scaleFn;
+this.canvasDpiScaler = scaleFn;
+
+}).call(this);
